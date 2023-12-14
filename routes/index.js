@@ -21,7 +21,15 @@ router.get("/", function (req, res, next) {
       // List of API endpoints and their descriptions
       const apiEndpoints = {
         "All Users": "https://yearupdemo.azurewebsites.net/api/users",
-        // ... other endpoints ...
+        "User by ID": "https://yearupdemo.azurewebsites.net/api/users/:id",
+        "Users by Group Name":
+          "https://yearupdemo.azurewebsites.net/api/users/group/:groupname",
+        "Users by Coding Nickname":
+          "https://yearupdemo.azurewebsites.net/api/users/nickname/:nickname",
+        "Update User":
+          "https://yearupdemo.azurewebsites.net/api/users/:id (PUT request)",
+        "Delete User":
+          "https://yearupdemo.azurewebsites.net/api/users/:id (DELETE request)",
       };
 
       // Generate HTML list of endpoints
@@ -38,7 +46,7 @@ router.get("/", function (req, res, next) {
       res.render("index", {
         currentTasks: currentTasks,
         completedTasks: completedTasks,
-        fullMessage: fullMessage
+        fullMessage: fullMessage,
       });
     })
     .catch((err) => {
@@ -46,7 +54,6 @@ router.get("/", function (req, res, next) {
       res.send("Sorry! Something went wrong.");
     });
 });
-
 
 router.post("/addTask", function (req, res, next) {
   const taskName = req.body.taskName;
