@@ -93,7 +93,11 @@ block content
     div(class='col-sm-2 fw-bold') Completed
   each task in completedTasks
     div(class='row mb-3')
-      div(class='col-sm-8') #{task.taskName}
-      div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
-      div(class='col-sm-2') #{format(task.completedDate, "yyyy-MM-dd")}
-
+      div(class='col-md-2') #{task.taskName}
+      div(class='col-md-2') #{task.category}
+      // ... [Add other task details as needed]
+      div(class='col-md-2')
+        if task.completedDate && !isNaN(new Date(task.completedDate).getTime())
+          #{format(new Date(task.completedDate), "yyyy-MM-dd")}
+        else
+          | Not Completed
