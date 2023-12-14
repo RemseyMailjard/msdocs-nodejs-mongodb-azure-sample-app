@@ -11,6 +11,14 @@ block content
       div(class='col-md-8')
         input(class="form-control form-control-sm" type="text" x-webkit-speech name='taskName' placeholder="Enter new task here")
 
+     // Description
+    div(class='row my-3')
+      div(class='col-md-2 align-bottom')
+        label(for="description" class='fs-5') Description
+      div(class='col-md-8')
+        textarea(class="form-control form-control-sm" name='description' placeholder="Enter task description here")
+
+
     // User ID
     div(class='row my-3')
       div(class='col-md-2 align-bottom')
@@ -23,15 +31,9 @@ block content
       div(class='col-md-2 align-bottom')
         label(for="category" class='fs-5') Category
       div(class='col-md-8')
-        input(class="form-control form-control-sm" type="text" name='category' placeholder="Enter task category here")
+        input(class="form-control form-control-sm" type="text"  x-webkit-speech name='category' placeholder="Enter task category here")
 
-    // Description
-    div(class='row my-3')
-      div(class='col-md-2 align-bottom')
-        label(for="description" class='fs-5') Description
-      div(class='col-md-8')
-        textarea(class="form-control form-control-sm" name='description' placeholder="Enter task description here")
-
+   
     // Deadline
     div(class='row my-3')
       div(class='col-md-2 align-bottom')
