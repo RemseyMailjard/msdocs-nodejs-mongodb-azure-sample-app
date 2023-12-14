@@ -12,7 +12,7 @@ router.get("/", function (req, res, next) {
       const completedTasks = tasks.filter((task) => task.completed === true);
 
       console.log(
-        `Total tasks: ${tasks.length}   Current tasks: ${currentTasks.length}    Completed tasks:  ${completedTasks.length}`
+        `Total tasks: ${tasks.length}   Current tasks: ${currentTasks.length}    Csompleted tasks:  ${completedTasks.length}`
       );
 
       // Define the welcome message
