@@ -21,7 +21,6 @@ block content
 
 
   // Display the full message at the top
-  block content
   each task in currentTasks
     div(class='row mb-2')
       div(class='col-sm-6') #{task.taskName}
@@ -46,4 +45,4 @@ block content
       div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
       div(class='col-sm-2') #{format(task.completedDate, "yyyy-MM-dd")}
   div(class='full-message')
-    | #{fullMessage}
+    !{fullMessage}

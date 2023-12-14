@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -13,4 +17,64 @@ a {
 
 .bg-azure-light-gray {
   background-color: #EBEBEB;
+}
+
+
+h1, .navbar-brand{
+   font-family: "Shadows Into Light" !important;
+   color: red;
+   font-weight: bolder;
+}
+
+.navbar-brand:hover{
+   color:#c2fbd7;
+}
+
+.my-cool-item {
+   position: relative;
+   display: inline-block;
+}
+
+.my-cool-item:after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 300px;
+   background: linear-gradient(180deg, rgba(0,0,0,0), rgb(255, 255, 255));
+}
+
+.button-33 {
+   margin: 0.25rem;
+   background-color: #c2fbd7;
+   border-radius: 100px;
+   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+   color: green;
+   cursor: pointer;
+   display: inline-block;
+
+   padding: 7px 20px;
+   text-align: center;
+   text-decoration: none;
+   border: 0;
+   font-size: 16px;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+.button-33:hover {
+   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+}
+
+.card{
+   box-shadow: 0px 5px 10px;
+}
+
+.complete{
+   background-color: #c2fbd7;
+}
+
+.incomplete{
+   background-color: #fe9694;
 }
