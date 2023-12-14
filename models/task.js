@@ -7,6 +7,8 @@ const taskSchema = new mongoose.Schema({
   },
   createDate: Date,
   completedDate: Date,
+  completed: {
+    type: Boolean,
     default: false,
   },
   userid: {
