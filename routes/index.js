@@ -56,19 +56,37 @@ router.get("/", function (req, res, next) {
 });
 
 router.post("/addTask", function (req, res, next) {
-  const taskName = req.body.taskName;
+  // Capture all the properties from the request body
+  const {
+    taskName,
+    userid,
+    category,
+    description,
+    deadline,
+    priority,
+    completed,
+  } = req.body;
   const createDate = Date.now();
 
+  // Create a new task with all properties
   var task = new Task({
     taskName: taskName,
     createDate: createDate,
+    userid: userid,
+    category: category,
+    description: description,
+    deadline: deadline,
+    priority: priority,
+    completed: completed,
   });
-  console.log(`Adding a new task ${taskName} - createDate ${createDate}`);
 
+  console.log(`Adding a new task: ${taskName}`);
+
+  // Save the task to the database
   task
     .save()
     .then(() => {
-      console.log(`Added new task ${taskName} - createDate ${createDate}`);
+      console.log(`Added new task: ${taskName}`);
       res.redirect("/");
     })
     .catch((err) => {
