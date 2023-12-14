@@ -4,18 +4,25 @@
         "Name": "Andres Meraz",
         "Email": "ameraz@appdev.yearup.org",
         "GitHubProfile": "https://github.com/AndresMeraz",
+        "linkedin": "https://www.linkedin.com/in/andresmeraz/",
         "CodingNickname": "The Game",
         "Groupname": "Eveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+
     },
     {
         "ID": 2,
         "Name": "Derek Li",
         "Email": "dli@appdev.yearup.org",
         "GitHubProfile": "https://github.com/deli123",
+        
         "CodingNickname": "JavaScript Jedi",
         "Groupname": "Eeveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 3,
@@ -24,8 +31,11 @@
         "GitHubProfile": "https://github.com/perazae",
         "CodingNickname": "Puppeteer",
         "Groupname": "Eeveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
+
     {
         "ID": 4,
         "Name": "Esther Ajayi",
@@ -33,7 +43,9 @@
         "GitHubProfile": "https://github.com/EWAjayi",
         "CodingNickname": "Escape Code",
         "Groupname": "Eveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
     },
     {
         "ID": 5,
@@ -42,7 +54,9 @@
         "GitHubProfile": "https://github.com/icortes",
         "CodingNickname": "Cookies",
         "Groupname": "ByteBuddies",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 6,
@@ -51,7 +65,9 @@
         "GitHubProfile": "https://github.com/JoseGPascua",
         "CodingNickname": "Database Brother",
         "Groupname": "Control Alt Defeat",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 7,
@@ -60,7 +76,9 @@
         "GitHubProfile": "https://github.com/JuanJEspinoza",
         "CodingNickname": "Code Shark",
         "Groupname": "Eeveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 8,
@@ -69,7 +87,9 @@
         "GitHubProfile": "https://github.com/JuanLuisMorenoRico",
         "CodingNickname": "Tech Titan",
         "Groupname": "ByteBuddies",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "defaultImage": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 9,
@@ -78,7 +98,9 @@
         "GitHubProfile": "https://github.com/JustineElbuhel",
         "CodingNickname": "I kill bugs",
         "Groupname": "Eveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://avatars.githubusercontent.com/u/146771840?v=4",
+        "defaultImage": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
     },
     {
         "ID": 10,
@@ -96,7 +118,9 @@
         "GitHubProfile": "https://github.com/MichaelNguyenTT",
         "CodingNickname": "Script Sorc",
         "Groupname": "Control Alt Defeat",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 12,
@@ -114,7 +138,9 @@
         "GitHubProfile": "https://github.com/NicolasFoong",
         "CodingNickname": "Tragic Bites",
         "Groupname": "Control Alt Defeat",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 14,
@@ -123,7 +149,9 @@
         "GitHubProfile": "https://github.com/PavloSernetskyi",
         "CodingNickname": "Specificity King",
         "Groupname": "ByteBuddies",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     },
     {
         "ID": 15,
@@ -132,6 +160,8 @@
         "GitHubProfile": "https://github.com/VictorPadilla0861",
         "CodingNickname": "Viral Vato",
         "Groupname": "Eveelutions",
-        "imageURL": "https://picsum.photos/200/300"
+        "imageURL": "https://picsum.photos/200/300",        
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
     }
 ]

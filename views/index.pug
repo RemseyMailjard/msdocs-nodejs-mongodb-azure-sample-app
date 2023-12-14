@@ -43,5 +43,6 @@ block content
       div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
       div(class='col-sm-2') #{format(task.completedDate, "yyyy-MM-dd")}
 
-  div(class='full-message')
-    !{fullMessage}
+div(class='full-message')
+  != fullMessage
+
