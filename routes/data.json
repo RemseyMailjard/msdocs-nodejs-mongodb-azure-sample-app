@@ -1,0 +1,137 @@
+[
+    {
+        "ID": 1,
+        "Name": "Andres Meraz",
+        "Email": "ameraz@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/AndresMeraz",
+        "CodingNickname": "The Game",
+        "Groupname": "Eveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 2,
+        "Name": "Derek Li",
+        "Email": "dli@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/deli123",
+        "CodingNickname": "JavaScript Jedi",
+        "Groupname": "Eeveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 3,
+        "Name": "Edson Peraza",
+        "Email": "eperaza@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/perazae",
+        "CodingNickname": "Puppeteer",
+        "Groupname": "Eeveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 4,
+        "Name": "Esther Ajayi",
+        "Email": "eajayi@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/EWAjayi",
+        "CodingNickname": "Escape Code",
+        "Groupname": "Eveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 5,
+        "Name": "Isaac Cortes Hernandez",
+        "Email": "icorteshernandez@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/icortes",
+        "CodingNickname": "Cookies",
+        "Groupname": "ByteBuddies",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 6,
+        "Name": "Jose Pascua",
+        "Email": "jpascua@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/JoseGPascua",
+        "CodingNickname": "Database Brother",
+        "Groupname": "Control Alt Defeat",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 7,
+        "Name": "Juan Espinoza",
+        "Email": "jespinoza@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/JuanJEspinoza",
+        "CodingNickname": "Code Shark",
+        "Groupname": "Eeveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 8,
+        "Name": "Juan Luis Moreno Rico",
+        "Email": "jmorenorico@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/JuanLuisMorenoRico",
+        "CodingNickname": "Tech Titan",
+        "Groupname": "ByteBuddies",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 9,
+        "Name": "Justine Elbuhel",
+        "Email": "jelbuhel@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/JustineElbuhel",
+        "CodingNickname": "I kill bugs",
+        "Groupname": "Eveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 10,
+        "Name": "Kayla McHenry",
+        "Email": "kmchenry@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/KaylaMchenry",
+        "CodingNickname": "Flexbox Fairy",
+        "Groupname": "Control Alt Defeat",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 11,
+        "Name": "Michael Nguyen",
+        "Email": "mnguyen@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/MichaelNguyenTT",
+        "CodingNickname": "Script Sorc",
+        "Groupname": "Control Alt Defeat",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 12,
+        "Name": "Mia McClure",
+        "Email": "mmcclure@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/MiaMcClure",
+        "CodingNickname": "Flex Mo",
+        "Groupname": "ByteBuddies",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 13,
+        "Name": "Nicolas Foong",
+        "Email": "nfoong@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/NicolasFoong",
+        "CodingNickname": "Tragic Bites",
+        "Groupname": "Control Alt Defeat",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 14,
+        "Name": "Pavlo Sernetskyi",
+        "Email": "psernetskyi@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/PavloSernetskyi",
+        "CodingNickname": "Specificity King",
+        "Groupname": "ByteBuddies",
+        "imageURL": "https://picsum.photos/200/300"
+    },
+    {
+        "ID": 15,
+        "Name": "Victor Padilla",
+        "Email": "vpadilla@appdev.yearup.org",
+        "GitHubProfile": "https://github.com/VictorPadilla0861",
+        "CodingNickname": "Viral Vato",
+        "Groupname": "Eveelutions",
+        "imageURL": "https://picsum.photos/200/300"
+    }
+]
