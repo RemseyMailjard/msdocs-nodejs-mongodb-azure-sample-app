@@ -1,6 +1,8 @@
+
 extends layout
 
 block content
+
   form(action='./addTask' method='POST' class='form-registration')
     // Task Name
     div(class='row my-3')
@@ -55,53 +57,43 @@ block content
         select(class="form-control form-control-sm" name='completed')
           option(value='false' selected) No
           option(value='true') Yes
+        div(class='col-md-2 text-end')
+          button(class='btn btn-success btn-sm' type='submit') Add task
 
+  h5(class='my-2') Current tasks
 
+  div(class='row mb-3 border-bottom border-3')
+     div(class='col-md-2 fw-bold') Task
+     div(class='col-md-2 fw-bold') Category
+     div(class='col-md-4 fw-bold') Description
+     div(class='col-md-1 fw-bold') Deadline
+     div(class='col-md-1 fw-bold') Priority
+     div(class='col-md-2 fw-bold') Action
 
-      div(class='col-md-2 text-end')
-        button(class='btn btn-success btn-sm' type='submit') Add task
+  each task in currentTasks
+    div(class='row mb-2')
+      div(class='col-md-2') #{task.taskName}
+      div(class='col-md-2') #{task.category}
+      div(class='col-md-4') #{task.description}
+      div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
+      div(class='col-md-1') #{task.priority}
+      div(class='col-sm-2')
+        form(action='./completeTask' method='POST' class='form-registration')
+          input(type='hidden' name='_id' value=`${task._id}`)
+          button(class='btn btn-primary btn-sm mx-1' type='submit') Complete
+      div(class='col-sm-2')
+        form(action='./deleteTask' method='POST' class='form-registration')
+          input(type='hidden' name='_id' value=`${task._id}`)
+          button(class='btn btn-danger btn-sm mx-1') Delete
 
-h5(class='my-2') Current Tasks
-
-div(class='row mb-3 border-bottom border-3')
-  div(class='col-md-2 fw-bold') Task
-  div(class='col-md-2 fw-bold') Category
-  div(class='col-md-4 fw-bold') Description
-  div(class='col-md-1 fw-bold') Deadline
-  div(class='col-md-1 fw-bold') Priority
-  div(class='col-md-2 fw-bold') Action
-
-each task in currentTasks
-  div(class='row mb-2')
-    div(class='col-md-2') #{task.taskName}
-    div(class='col-md-2') #{task.category}
-    div(class='col-md-4') #{task.description}
-    div(class='col-md-1') #{format(task.deadline, "yyyy-MM-dd")}
-    div(class='col-md-1') #{task.priority}
-    div(class='col-md-2')
-      form(action='./completeTask' method='POST' class='form-registration')
-        input(type='hidden' name='_id' value=`${task._id}`)
-        button(class='btn btn-primary btn-sm mx-1' type='submit') Complete
-      form(action='./deleteTask' method='POST' class='form-registration')
-        input(type='hidden' name='_id' value=`${task._id}`)
-        button(class='btn btn-danger btn-sm mx-1') Delete
-
-h5(class='my-2') Completed Tasks
-
-div(class='row mb-3 border-bottom border-3')
-  div(class='col-md-2 fw-bold') Task
-  div(class='col-md-2 fw-bold') Category
-  div(class='col-md-4 fw-bold') Description
-  div(class='col-md-1 fw-bold') Deadline
-  div(class='col-md-1 fw-bold') Priority
-  div(class='col-md-2 fw-bold') Completed
-
-each task in completedTasks
-  div(class='row mb-3')
-    div(class='col-md-2') #{task.taskName}
-    div(class='col-md-2') #{task.category}
-    div(class='col-md-4') #{task.description}
-    div(class='col-md-1') #{format(task.deadline, "yyyy-MM-dd")}
-    div(class='col-md-1') #{task.priority}
-    div(class='col-md-2') #{format(task.completedDate, "yyyy-MM-dd")}
+  h5(class='my-2') Completed tasks
+  div(class='row mb-3 border-bottom border-3')
+    div(class='col-sm-8 fw-bold') Task
+    div(class='col-sm-2 fw-bold') Created
+    div(class='col-sm-2 fw-bold') Completed
+  each task in completedTasks
+    div(class='row mb-3')
+      div(class='col-sm-8') #{task.taskName}
+      div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
+      div(class='col-sm-2') #{format(task.completedDate, "yyyy-MM-dd")}
 
