@@ -16,7 +16,7 @@ block content
       div(class='col-md-2 align-bottom')
         label(for="description" class='fs-5') Description
       div(class='col-md-8')
-        textarea(class="form-control form-control-sm" name='description' placeholder="Enter task description here")
+        textarea(class="form-control form-control-sm" name='description' placeholder="Enter task description here" )
 
 
     // User ID
@@ -24,7 +24,7 @@ block content
       div(class='col-md-2 align-bottom')
         label(for="userid" class='fs-5') User ID
       div(class='col-md-8')
-        input(class="form-control form-control-sm" type="number" name='userid' placeholder="Enter user ID here")
+        input(class="form-control form-control-sm" type="number" name='userid' placeholder="Enter user ID here" min="0" max="100")
 
     // Category
     div(class='row my-3')
