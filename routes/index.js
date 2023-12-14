@@ -14,45 +14,39 @@ router.get("/", function (req, res, next) {
       console.log(
         `Total tasks: ${tasks.length}   Current tasks: ${currentTasks.length}    Completed tasks:  ${completedTasks.length}`
       );
+
+      // Define the welcome message
+      const message = "Hello Year Up Class! Welcome to my Demo API.";
+
+      // List of API endpoints and their descriptions
+      const apiEndpoints = {
+        "All Users": "https://yearupdemo.azurewebsites.net/api/users",
+        // ... other endpoints ...
+      };
+
+      // Generate HTML list of endpoints
+      let endpointsHtml = "<ul>";
+      for (const [description, url] of Object.entries(apiEndpoints)) {
+        endpointsHtml += `<li>${description}: <a href="${url}">${url}</a></li>`;
+      }
+      endpointsHtml += "</ul>";
+
+      // Combine message and endpoints list
+      const fullMessage = `<p>${message}</p>${endpointsHtml}`;
+
+      // Render the page with tasks and full message
       res.render("index", {
         currentTasks: currentTasks,
         completedTasks: completedTasks,
+        fullMessage: fullMessage
       });
     })
     .catch((err) => {
       console.log(err);
       res.send("Sorry! Something went wrong.");
     });
-
-  const message = "Hello Year Up Class! Welcome to my Demo API.";
-
-  // List of API endpoints and their descriptions
-  const apiEndpoints = {
-    "All Users": "https://yearupdemo.azurewebsites.net/api/users",
-    "User by ID": "https://yearupdemo.azurewebsites.net/api/users/:id",
-    "Users by Group Name":
-      "https://yearupdemo.azurewebsites.net/api/users/group/:groupname",
-    "Users by Coding Nickname":
-      "https://yearupdemo.azurewebsites.net/api/users/nickname/:nickname",
-    "Update User":
-      "https://yearupdemo.azurewebsites.net/api/users/:id (PUT request)",
-    "Delete User":
-      "https://yearupdemo.azurewebsites.net/api/users/:id (DELETE request)",
-  };
-
-  // Generate HTML list of endpoints
-  let endpointsHtml = "<ul>";
-  for (const [description, url] of Object.entries(apiEndpoints)) {
-    endpointsHtml += `<li>${description}: <a href="${url}">${url}</a></li>`;
-  }
-  endpointsHtml += "</ul>";
-
-  // Combine message and endpoints list
-  const fullMessage = `<p>${message}</p>${endpointsHtml}`;
-
-  // Send the formatted message as a response
-  res.send(fullMessage);
 });
+
 
 router.post("/addTask", function (req, res, next) {
   const taskName = req.body.taskName;
@@ -104,6 +98,10 @@ router.post("/deleteTask", function (req, res, next) {
       console.log(err);
       res.send("Sorry! Something went wrong.");
     });
+});
+
+router.get("/api/users", (req, res) => {
+  res.json(jsonData);
 });
 
 // Get User by ID

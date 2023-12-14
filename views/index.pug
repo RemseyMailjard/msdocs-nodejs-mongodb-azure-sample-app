@@ -19,6 +19,10 @@ block content
     div(class='col-md-2 fw-bold') Created
     div(class='col-md-4 fw-bold') Action
 
+block content
+  // Display the full message at the top
+  div(class='full-message')
+    | #{fullMessage}
   each task in currentTasks
     div(class='row mb-2')
       div(class='col-sm-6') #{task.taskName}
